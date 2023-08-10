@@ -8,13 +8,16 @@ insert into Album(name, year)
 values ('New Album', 2018), ('Fear', 2019), ('Remember', 2020);
 
 insert into Album(name, year)
-values ('Best Album', 2021), ('Second chance', 2017), ('Future life', 2019)
+values ('Best Album', 2021), ('Second chance', 2017), ('Future life', 2019);
 
 insert into Track(name, duration, album_id)
-values ('Last Resort', 3.58, 3), ('Reckless', 3.23, 2), ('Lifeline', 3.54, 1), ('Scars', 2.44, 1), ('Players', 2.34, 2), ('My immortal', 3.55, 3);
+values ('Last Resort', 240, 3), ('Reckless', 265, 2), ('Lifeline', 196, 1), ('Scars', 204, 1), ('Players', 186, 2), ('My immortal', 211, 3);
 
 insert into Track(name, duration, album_id)
-values ('Simple song', 3.3, 5), ('IT song', 2.46, 4), ('The Best song', 3.46, 6);
+values ('Simple song', 178, 5), ('IT song', 199, 4), ('The Best song', 170, 6);
+
+insert into Track(name, duration, album_id)
+values ('oh my god', 120, 2), ('myself', 110, 3), ('by myself by', 150, 1), ('beemy', 160, 1);
 
 insert into Compilation(name, year)
 values ('White Pony', 2017), ('Ohms', 2022), ('White Rabbit', 2018), ('Coming Home', 2019);
