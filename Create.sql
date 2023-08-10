@@ -17,14 +17,14 @@ create table if not exists Album (
 create table if not exists Track (
 	Track_id SERIAL primary key,
 	name VARCHAR(60) not NULL,
-	duration numeric not NULL,
+	duration int not NULL,
 	album_id integer not NULL references Album(Album_id)
 );
 
 create table if not exists Compilation (
 	Compilation_id SERIAL primary key,
 	name VARCHAR(100) not NULL,
-	year integer check (year >= 2000)
+	year integer NOT NULL
 );
 
 create table if not exists Genre_artist (
