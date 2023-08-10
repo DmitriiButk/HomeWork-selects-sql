@@ -11,13 +11,13 @@ create table if not exists Genre (
 create table if not exists Album (
 	Album_id SERIAL primary key,
 	name VARCHAR(60) not null,
-	year INTEGER not NULL
+	year integer not NULL
 );
 
 create table if not exists Track (
 	Track_id SERIAL primary key,
 	name VARCHAR(60) not NULL,
-	duration int not NULL,
+	duration integer not NULL,
 	album_id integer not NULL references Album(Album_id)
 );
 
