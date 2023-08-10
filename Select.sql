@@ -13,7 +13,7 @@ where year between 2018 and 2020;
 
 --Исполнители, чьё имя состоит из одного слова.--
 select name from Artist
-where name  not LIKE '% %';
+where name not LIKE '% %';
 
 --Название треков, которые содержат слово «My».--
 select name from track
